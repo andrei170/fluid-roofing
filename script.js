@@ -58,6 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     if (!valid(2)) return;
+    // Honeypot: if the hidden "company" field is filled, it's a bot. Show success, send nothing.
+    var hp = form.querySelector('[name=company]');
+    if (hp && hp.value) { form.style.display = 'none'; document.getElementById('qok').style.display = 'block'; return; }
     var done = function () {
       form.style.display = 'none';
       document.getElementById('qok').style.display = 'block';
