@@ -1,7 +1,8 @@
 :root{
-  --navy:#10243b; --navy2:#16314f; --steel:#1f4061; --ink:#13202e; --paper:#ffffff;
-  --mut:#5b6b7a; --line:#e3e9ef; --bg:#f4f7fa; --accent:#f0742a; --accent2:#d75f18;
-  --gold:#f5b301; --good:#1f9d57; --red:#d8442e;
+  /* Brand-matched to the Fluid Roofing logo: slate-gray #405060 + bright blue #0088c8 */
+  --navy:#28333f; --navy2:#33414f; --steel:#41525f; --ink:#283039; --paper:#ffffff;
+  --mut:#5b6b7a; --line:#e3e9ef; --bg:#f4f7fa; --accent:#0088c8; --accent2:#0072a8;
+  --gold:#f5b301; --good:#1f9d57; --red:#d8442e; --sky:#5cc4f0;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -9,7 +10,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Ar
 a{color:inherit;text-decoration:none}
 img{max-width:100%}
 .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
-.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:14px 26px;border-radius:8px;border:none;cursor:pointer;font-size:16px;transition:.15s;box-shadow:0 6px 18px rgba(240,116,42,.32)}
+.btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:14px 26px;border-radius:8px;border:none;cursor:pointer;font-size:16px;transition:.15s;box-shadow:0 6px 18px rgba(0,136,200,.30)}
 .btn:hover{background:var(--accent2);transform:translateY(-1px)}
 .btn.ghost{background:transparent;border:2px solid #fff;box-shadow:none}
 .btn.ghost:hover{background:rgba(255,255,255,.12)}
@@ -45,7 +46,7 @@ nav.main a:hover{color:var(--accent)}
 .emerg a{text-decoration:underline}
 
 /* hero */
-.hero{position:relative;color:#fff;background:linear-gradient(rgba(13,28,46,.78),rgba(13,28,46,.72)),url('images/hero.jpg') center/cover no-repeat}
+.hero{position:relative;color:#fff;background:linear-gradient(rgba(40,51,63,.80),rgba(40,51,63,.74)),url('images/hero.jpg') center/cover no-repeat}
 .hero .wrap{padding:0 22px;display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center;min-height:560px}
 @media(max-width:980px){.hero .wrap{grid-template-columns:1fr;padding:48px 22px;min-height:0}}
 .hero h1{font-size:46px;line-height:1.08;font-weight:900;letter-spacing:-.02em}
@@ -55,7 +56,7 @@ nav.main a:hover{color:var(--accent)}
 .badges{display:flex;gap:20px;margin-top:30px;flex-wrap:wrap;color:#dce7f2;font-size:14px;font-weight:600}
 .badges span{display:inline-flex;align-items:center;gap:7px}
 .badges b{color:var(--gold)}
-.pagehero{background:linear-gradient(rgba(13,28,46,.85),rgba(13,28,46,.8)),url('images/hero.jpg') center/cover no-repeat;color:#fff;padding:70px 0}
+.pagehero{background:linear-gradient(rgba(40,51,63,.86),rgba(40,51,63,.80)),url('images/hero.jpg') center/cover no-repeat;color:#fff;padding:70px 0}
 .pagehero h1{font-size:40px;font-weight:900;line-height:1.1;max-width:760px}
 .pagehero p{color:#dbe7f2;font-size:18px;margin-top:14px;max-width:640px}
 .crumb{font-size:13px;color:#9fb6cd;margin-bottom:14px}
@@ -74,7 +75,7 @@ nav.main a:hover{color:var(--accent)}
 .opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:6px}
 .opt{border:1.5px solid var(--line);border-radius:10px;padding:13px;cursor:pointer;font-weight:600;font-size:14.5px;text-align:center;transition:.12s;background:#fbfcfe}
 .opt:hover{border-color:#c4d2e0}
-.opt.sel{border-color:var(--accent);background:#fdeee3;color:var(--accent2)}
+.opt.sel{border-color:var(--accent);background:#e3f4fc;color:var(--accent2)}
 .quote input,.quote select,.quote textarea{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:8px;margin-bottom:10px;font-size:15px;font-family:inherit;background:#fbfcfe}
 .quote .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .formnav{display:flex;gap:10px;margin-top:6px}
@@ -96,7 +97,7 @@ nav.main a:hover{color:var(--accent)}
 @media(min-width:880px){.grid3{grid-template-columns:repeat(4,1fr)}}
 .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;transition:.15s}
 .card:hover{box-shadow:0 14px 34px rgba(16,36,59,.12);transform:translateY(-3px);border-color:#cdd8e3}
-.card .ic{width:46px;height:46px;border-radius:10px;background:#fdeee3;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:14px}
+.card .ic{width:46px;height:46px;border-radius:10px;background:#e3f4fc;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:14px}
 .card h3{color:var(--navy);font-size:18px;font-weight:800;margin-bottom:8px}
 .card h3 a:hover{color:var(--accent)}
 .card p{color:var(--mut);font-size:14.5px}
@@ -111,13 +112,13 @@ nav.main a:hover{color:var(--accent)}
 .ticks li:before{content:"\2713";position:absolute;left:0;color:#fff;background:var(--good);width:20px;height:20px;border-radius:50%;font-size:12px;display:flex;align-items:center;justify-content:center;top:11px}
 
 /* financing band */
-.fin{background:linear-gradient(120deg,#0c1d30,#1f4061);color:#fff}
+.fin{background:linear-gradient(120deg,#28333f,#41525f);color:#fff}
 .fin .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
 @media(max-width:880px){.fin .wrap{grid-template-columns:1fr;text-align:center}}
 .fin h2{font-size:28px;font-weight:800;margin-bottom:10px}
 .fin p{color:#d6e3f0;font-size:16px}
 .fin .pricebox{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:24px;text-align:center}
-.fin .pricebox .big{font-size:38px;font-weight:900;color:var(--gold)}
+.fin .pricebox .big{font-size:38px;font-weight:900;color:var(--sky)}
 .fin .pricebox span{font-size:13px;color:#cdddec;text-transform:uppercase;letter-spacing:.08em}
 
 /* area */
@@ -176,7 +177,7 @@ footer .li{margin-bottom:8px}
 .how p{color:var(--mut);font-size:14.5px}
 
 /* estimate calculator */
-.calc{background:linear-gradient(120deg,#0c1d30,#1f4061);color:#fff}
+.calc{background:linear-gradient(120deg,#28333f,#41525f);color:#fff}
 .calc .wrap{text-align:center}
 .calc .lead{color:#d3e1f0;margin:0 auto}
 .calcbox{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:28px;margin:30px auto 0;max-width:760px;text-align:left}
@@ -188,7 +189,7 @@ footer .li{margin-bottom:8px}
 .segbtns button.sel{background:var(--accent);border-color:var(--accent);color:#fff}
 .calcout{margin-top:24px;text-align:center;border-top:1px solid rgba(255,255,255,.14);padding-top:22px}
 .calcout > span{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#a9c2da}
-.calcout .range{font-size:38px;font-weight:900;color:var(--gold);margin:8px 0 6px;line-height:1}
+.calcout .range{font-size:38px;font-weight:900;color:var(--sky);margin:8px 0 6px;line-height:1}
 @media(max-width:560px){.calcout .range{font-size:28px}}
 .calcout .disc{font-size:12.5px;color:#9fb6cd;max-width:520px;margin:0 auto 18px}
 
@@ -208,7 +209,7 @@ footer .li{margin-bottom:8px}
 .post ul,.post ol{margin:0 0 18px 22px}
 .post li{color:#33414f;font-size:16.5px;margin-bottom:8px}
 .post a{color:var(--accent2);font-weight:600;text-decoration:underline}
-.post .keypoint{background:#fff6ef;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:16px 18px;margin:0 0 22px}
+.post .keypoint{background:#eef6fb;border-left:4px solid var(--accent);border-radius:0 10px 10px 0;padding:16px 18px;margin:0 0 22px}
 .post .keypoint p{margin:0;font-size:15.5px}
 .postcta{background:linear-gradient(120deg,var(--navy),var(--steel));color:#fff;border-radius:14px;padding:30px;text-align:center;margin-top:36px}
 .postcta h3{color:#fff;font-size:22px;font-weight:800;margin-bottom:8px}
