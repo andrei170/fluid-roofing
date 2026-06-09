@@ -86,6 +86,8 @@ nav.main a:hover{color:var(--accent)}
 .quote .ok b{display:block;font-size:18px;margin-bottom:6px}
 .err{color:var(--red);font-size:13px;margin-bottom:8px;display:none}
 .hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.consent{font-size:11px;color:var(--mut);margin-top:10px;line-height:1.5;text-align:center}
+.consent a{color:var(--accent2);text-decoration:underline}
 
 /* trust strip */
 .trust{background:var(--navy2);color:#dbe7f2}
