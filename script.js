@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!box) return;
   var sqft = 0, mat = '';
   // installed $/sqft ranges (Spokane-area blended benchmarks)
-  var rates = { asphalt: [5.5, 8.5], metal: [9, 15] };
+  var rates = { asphalt: [5.5, 8.5], metal: [9, 15], tpo: [7, 14] };
 
   function fmt(n) { return '$' + (Math.round(n / 100) * 100).toLocaleString(); }
   function update() {
